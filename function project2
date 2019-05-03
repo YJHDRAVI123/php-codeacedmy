@@ -1,0 +1,36 @@
+this is project2 in codeacedemy php course to be familiar with function concept.
+
+Mad Lib Functions
+In this project, we’ll use PHP to write a function to fill in a Mad Libs story! Mad Libs are short stories with blank spaces, which get filled in by the user. The result is usually funny (or strange).
+
+Mad Libs require:
+
+A short story with blank spaces (asking for different types of words).
+Words to fill in those blanks.
+“Roses are Red” poem example:
+
+Mad Libs Example
+
+For this project, we provide the story, but it will be up to you to create a function that:
+
+Takes desired words as arguments.
+Returns the story with the words put into blanks in the right place.
+Let’s begin!
+
+
+<?php
+function generateStory($singular_noun
+,$verb
+,$color,$distance_unit){
+  $story="\nThe $singular_noun are lovely, $color, and deep.
+But I have promises to keep,
+And $distance_unit to go before I $verb,
+And $distance_unit to go before I $verb.\n";
+
+  return $story;
+  };
+
+echo generateStory("flowers", "eat", "red","50km");
+echo generateStory("dog", "play", "purple","5km");
+echo generateStory("parrot", "eat", "green","10km");
+echo generateStory("bike", "goes", "grey","100km");
